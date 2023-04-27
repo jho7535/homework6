@@ -296,7 +296,7 @@ int deleteFirst(headNode* h) {	//첫번째 노드를 삭제하는 함수
 	listNode* n = h->first;	//리스트 노드 n을 선언하고 헤드 노드의 포인터로 초기화
 
 	h->first = n->link;	//헤드 노드의 포인터에 n의 포인터를 대입
-	free(n);	// n 메모리 해제
+	free(n);	// n 메모리 해제 
 
 	return 0;
 }
